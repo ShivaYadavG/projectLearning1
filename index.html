@@ -5,51 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcom Page</title>
+    <link rel="stylesheet" href="Css files for headings/headingStyles.css">
 </head>
 
 <body>
-    <h1>Welocme to Travel mithro</h1>
+    <div id="header">
+        <h1>Welocme to Travel mithro</h1>
+    </div>
     <hr>
-    <a href="aboutUs.html" target="_blank">about us</a>
-    <a href="contact.html" target="_blank">Conatact us</a>
+    <div id="nav">
+        <a href="aboutUs.html" target="_blank">about us</a>
+        <a href="contact.html" target="_blank">Conatact us</a>
+    </div>
+
     <hr>
-    <p>Save the animals whic are in extenct</p>
-    <a href="https://voices.shortpedia.com/society/environment/extinct-animals-in-this-world/"><img
-            src="Images\Woolly-Mammoth-Mammuthus-primigenius.jpg" alt="mamuth Image" height="250" width="600"></a>
-    <h2>click one image to know more about the animal</h2>
+    <div id="main">
+        <p>Save the animals whic are in extenct</p>
+        <a href="https://voices.shortpedia.com/society/environment/extinct-animals-in-this-world/"><img
+                src="Images\Woolly-Mammoth-Mammuthus-primigenius.jpg" alt="mamuth Image" height="250" width="600"></a>
+        <h2>click one image to know more about the animal</h2>
 
-    <p>Name of the animals which are in extinct</p>
-    <ul>
-        <li>Dodo</li>
-        <li>Manuuth</li>
-        <li>Benagl tiger</li>
-    </ul>
+        <p>Name of the animals which are in extinct</p>
+        <ul>
+            <li>Dodo</li>
+            <li>Manuuth</li>
+            <li>Benagl tiger</li>
+        </ul>
 
-    <p>What you have to do</p>
-    <ol type="A" start="a">
-        <li>Protect nature</li>
-        <li>Reduce carbon</li>
-        <li>Be responsible</li>
-    </ol>
+        <p>What you have to do</p>
+        <ol type="A" start="a">
+            <li>Protect nature</li>
+            <li>Reduce carbon</li>
+            <li>Be responsible</li>
+        </ol>
 
-    <H4>Fill the below form if you want to save the animals</H4>
-    <hr>
-    <form action="confirmation.html" target="_blank">
-        <label for="Name">Enter your name *</label><br>
-        <input type="text" required id="Name" name="Name">
-        <br>
-        <label for="email">Enter your email *</label><br>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="phoneNo">Enter your phone number</label><br>
-        <input type="number" id="phoneNo" name="PhoneNo">
-        <br>
-        <label for="comment">Enter any extra commnet</label>
-        <br>
-        <input type="text" id="comment" name="comment">
-        <br>
-        <input type="submit" name="Enter">
-    </form>
+        <H4>Fill the below form if you want to save the animals</H4>
+        <hr>
+        <form action="confirmation.html" target="_blank" id="contactForm">
+            <label for="Name">Enter your name *</label><br>
+            <input type="text" required id="Name" name="Name">
+            <br>
+            <label for="email">Enter your email *</label><br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phoneNo">Enter your phone number</label><br>
+            <input type="number" id="phoneNo" name="PhoneNo">
+            <br>
+            <label for="comment">Enter any extra commnet</label>
+            <br>
+            <input type="text" id="comment" name="comment">
+            <br>
+            <input type="submit" name="Enter">
+            <button type="button" onclick="clearAlert()">clear</button>
+            <button type="button" onclick="clearForm()">rest form </button>
+            <br>
+            <button id="jQueryBtn">Hide P tag - jQuery</button>
+            <button onclick="hidePTags()">Hide P tag - Java Script</button>
+
+        </form>
+    </div>
+    <footer>
+        <div id="footer">
+            <a href="contact.html">contact us for more information</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512" />
+            </svg>
+        </div>
+
+    </footer>
+    <script src="scripts/jQuery.min.js"></script>
+    <script src="scripts/site.js"></script>
+    <script>
+     
+    </script>
 </body>
+
 
 </html>
